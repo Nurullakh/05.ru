@@ -78,7 +78,7 @@ let searchInput = document.querySelector('.search__input')
 let keywordsSearch = ['i', 'с', 'а', 'a', 'p', 'm']
 searchInput.addEventListener('input', (e) => {
 	keywordsSearch.forEach(key => {
-		let reg = key.match(e.target.value)
+		let reg = key.match(e.target.value.toLowerCase())
 		if (reg !== null) {
 			if (reg[0].length) {
 				seaarButtom.classList.add('search__buttom--active')
