@@ -1,0 +1,51 @@
+.container
+	width: 1280px
+	padding: 0 20px
+	box-sizing: content-box
+	margin: auto
+@media (max-width: 1015px)
+	.header
+		&__name
+			display: none
+		&__login
+			display: none
+		&__phone
+			display: none
+		&__user-panel
+			display: none
+	.promo		
+		&__title--small
+			display: block
+		&__subtitle--small
+			display: block
+		&__title--large
+			display: none
+		&__subtitle--large
+			display: none
+	.search
+		&__category
+			display: none
+	.info
+		display: none
+@media (max-width: 768px)
+	.header
+		&__name
+			display: none
+		&__login
+			display: none
+		&__phone
+			display: none
+		&__user-panel
+			display: none
+	.search
+		&__category
+			display: none
+	.product
+		margin-bottom: 107px
+		&__footer
+			display: none
+	.product-card:nth-child(2n)
+		display: none
+
+	.info
+		display: none
